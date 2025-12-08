@@ -1,4 +1,5 @@
-import { Home, ShoppingBag, UserPlus, HelpCircle, MessageCircle } from 'lucide-react';
+
+import { Home, ShoppingBag, UserPlus, HelpCircle, MessageCircle, LogIn } from 'lucide-react';
 import { NavItem, Product } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
@@ -6,6 +7,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'બજાર (Market)', translationKey: 'nav.market', path: '/market', icon: ShoppingBag },
   { label: 'કૃષિ સલાહકાર', translationKey: 'nav.advisor', path: '/ai-advisor', icon: MessageCircle },
   { label: 'રજીસ્ટ્રેશન', translationKey: 'nav.register', path: '/register', icon: UserPlus },
+  { label: 'લોગિન', translationKey: 'nav.login', path: '/login', icon: LogIn },
   { label: 'મદદ', translationKey: 'nav.help', path: '/help', icon: HelpCircle },
 ];
 

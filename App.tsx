@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -5,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Marketplace from './pages/Marketplace';
 import Register from './pages/Register';
+import Login from './pages/Login';
 import AiAssistant from './pages/AiAssistant';
 import Help from './pages/Help';
 
@@ -18,6 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/market" element={<Marketplace />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/ai-advisor" element={<AiAssistant />} />
             <Route path="/help" element={<Help />} />
           </Routes>

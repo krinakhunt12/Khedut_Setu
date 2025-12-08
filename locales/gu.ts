@@ -1,3 +1,4 @@
+
 export const gu = {
   nav: {
     home: "મુખ્ય પૃષ્ઠ",
@@ -100,5 +101,27 @@ export const gu = {
     contactTitle: "સંપર્ક કરો",
     rights: "© 2024 ખેડૂત સેતુ. સર્વાધિકાર સુરક્ષિત.",
     popularSearches: "લોકપ્રિય શોધ"
+  },
+  auth: {
+    welcome: "સ્વાગત છે!",
+    loginTitle: "તમારા એકાઉન્ટમાં લોગિન કરો",
+    registerTitle: "નવું એકાઉન્ટ બનાવો",
+    farmer: "ખેડૂત (વેચનાર)",
+    buyer: "ગ્રાહક (ખરીદનાર)",
+    fullName: "પૂરું નામ",
+    phone: "મોબાઇલ નંબર",
+    password: "પાસવર્ડ",
+    village: "ગામ / તાલુકો",
+    loginBtn: "લોગિન કરો",
+    registerBtn: "રજીસ્ટ્રેશન કરો",
+    rememberMe: "મને યાદ રાખો",
+    haveAccount: "પહેલેથી એકાઉન્ટ છે?",
+    noAccount: "એકાઉન્ટ નથી?",
+    loginLink: "લોગિન",
+    registerLink: "રજીસ્ટ્રેશન",
+    terms: "શરતો અને નીતિઓ",
+    agree: "રજીસ્ટર કરીને તમે અમારી {{terms}} સાથે સંમત થાઓ છો.",
+    farmerDesc: "તમારો પાક વેચવા માટે નોંધણી કરો",
+    buyerDesc: "તાજી પેદાશો ખરીદવા માટે નોંધણી કરો"
   }
 };

@@ -1,3 +1,4 @@
+
 export const en = {
   nav: {
     home: "Home",
@@ -100,5 +101,27 @@ export const en = {
     contactTitle: "Contact Us",
     rights: "© 2024 Khedut Setu. All rights reserved.",
     popularSearches: "Popular Searches"
+  },
+  auth: {
+    welcome: "Welcome!",
+    loginTitle: "Login to your account",
+    registerTitle: "Create a new account",
+    farmer: "Farmer (Seller)",
+    buyer: "Buyer (Customer)",
+    fullName: "Full Name",
+    phone: "Mobile Number",
+    password: "Password",
+    village: "Village / Taluka",
+    loginBtn: "Login",
+    registerBtn: "Register",
+    rememberMe: "Remember Me",
+    haveAccount: "Already have an account?",
+    noAccount: "Don't have an account?",
+    loginLink: "Login",
+    registerLink: "Register",
+    terms: "Terms & Policies",
+    agree: "By registering, you agree to our {{terms}}.",
+    farmerDesc: "Register to sell your crops",
+    buyerDesc: "Register to buy fresh produce"
   }
 };
