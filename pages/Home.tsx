@@ -11,6 +11,14 @@ import { SEO_KEYWORDS } from '../constants';
 const Home: React.FC = () => {
   const { t } = useTranslation();
 
+  const scrollToHowItWorks = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const element = document.getElementById('how-it-works');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen font-sans">
       
@@ -49,7 +57,11 @@ const Home: React.FC = () => {
               {t('hero.ctaBuyer')}
             </Link>
           </div>
-          <a href="#how-it-works" className="mt-6 text-green-200 hover:text-white underline decoration-dotted underline-offset-4">
+          <a 
+            href="#how-it-works" 
+            onClick={scrollToHowItWorks}
+            className="mt-6 text-green-200 hover:text-white underline decoration-dotted underline-offset-4 cursor-pointer"
+          >
              {t('hero.learnMore')}
           </a>
         </div>
@@ -83,7 +95,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* 3. How It Works */}
-      <section id="how-it-works" className="py-20 bg-white">
+      <section id="how-it-works" className="py-20 bg-white scroll-mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-green-900">{t('howItWorks.title')}</h2>
