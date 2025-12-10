@@ -11,6 +11,7 @@ import AiAssistant from './pages/AiAssistant';
 import Help from './pages/Help';
 import FloatingAiChat from './components/FloatingAiChat';
 import Legal from './pages/Legal';
+import About from './pages/About';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/help" element={<Help />} />
             <Route path="/terms" element={<Legal type="terms" />} />
             <Route path="/privacy" element={<Legal type="privacy" />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </main>
         <Footer />

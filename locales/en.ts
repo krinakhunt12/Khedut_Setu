@@ -140,8 +140,6 @@ export const en = {
     close: "Close",
     organic: "Organic",
     verified: "Verified",
-    
-    // New Translations
     filters: "Filters",
     categories: "Categories",
     priceRange: "Price Range",
@@ -167,6 +165,7 @@ export const en = {
     privacy: "Privacy Policy",
     security: "Payment Security",
     faq: "FAQ",
+    about: "About Us",
     contactTitle: "Contact Us",
     rights: "© 2024 Khedut Setu. All rights reserved.",
     popularSearches: "Popular Searches"
@@ -229,5 +228,22 @@ export const en = {
     placeholder: "Type your question here... (e.g. Cotton prices?)",
     disclaimer: "AI may provide incorrect info. Always consult an expert.",
     suggestions: "Quick Questions:"
+  },
+  about: {
+    title: "About Khedut Setu",
+    subtitle: "Merging Technology with Tradition",
+    storyTitle: "Our Story",
+    storyDesc: "For years, Indian farmers have faced low returns due to middlemen and market uncertainties. 'Khedut Setu' aims to change this system. We have built a digital platform where the farmer is king and the customer gets purity.",
+    missionTitle: "Our Mission",
+    missionDesc: "To double farmers' income and bring transparency to agriculture. To connect every farmer to the world through a smartphone.",
+    visionTitle: "Our Vision",
+    visionDesc: "An India where farmers are self-reliant and farming becomes a profitable business.",
+    valuesTitle: "Core Values",
+    values: {
+      trust: "Trust",
+      transparency: "Transparency",
+      innovation: "Innovation",
+      community: "Community"
+    }
   }
 };
