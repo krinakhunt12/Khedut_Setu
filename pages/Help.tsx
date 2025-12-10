@@ -39,7 +39,7 @@ const Help: React.FC = () => {
       </div>
       
       {/* FAQ Section */}
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 mb-8">
+      <div id="faq" className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 mb-8 scroll-mt-24">
         <h2 className="text-xl font-bold mb-6 flex items-center gap-2 text-gray-800">
           <MessageSquare className="text-yellow-500" />
           {t('help.faqTitle')}
@@ -79,7 +79,7 @@ const Help: React.FC = () => {
       </div>
 
       {/* Safety Tips */}
-      <div className="bg-red-50 border border-red-100 rounded-2xl p-6 mb-12">
+      <div id="safety" className="bg-red-50 border border-red-100 rounded-2xl p-6 mb-12 scroll-mt-24">
         <h2 className="text-xl font-bold mb-2 flex items-center gap-2 text-red-800">
            <Shield className="w-6 h-6" />
            {t('help.safetyTitle')}

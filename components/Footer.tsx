@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -18,10 +20,10 @@ const Footer: React.FC = () => {
         <div>
           <h3 className="text-lg font-bold text-white mb-4">{t('footer.linksTitle')}</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-green-400">{t('footer.terms')}</a></li>
-            <li><a href="#" className="hover:text-green-400">{t('footer.privacy')}</a></li>
-            <li><a href="#" className="hover:text-green-400">{t('footer.security')}</a></li>
-            <li><a href="#" className="hover:text-green-400">{t('footer.faq')}</a></li>
+            <li><Link to="/terms" className="hover:text-green-400 transition-colors">{t('footer.terms')}</Link></li>
+            <li><Link to="/privacy" className="hover:text-green-400 transition-colors">{t('footer.privacy')}</Link></li>
+            <li><Link to="/help#safety" className="hover:text-green-400 transition-colors">{t('footer.security')}</Link></li>
+            <li><Link to="/help#faq" className="hover:text-green-400 transition-colors">{t('footer.faq')}</Link></li>
           </ul>
         </div>
         

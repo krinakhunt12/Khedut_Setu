@@ -10,10 +10,13 @@ import Login from './pages/Login';
 import AiAssistant from './pages/AiAssistant';
 import Help from './pages/Help';
 import FloatingAiChat from './components/FloatingAiChat';
+import Legal from './pages/Legal';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen relative">
         <Navbar />
         <main className="flex-grow">
@@ -24,6 +27,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/ai-advisor" element={<AiAssistant />} />
             <Route path="/help" element={<Help />} />
+            <Route path="/terms" element={<Legal type="terms" />} />
+            <Route path="/privacy" element={<Legal type="privacy" />} />
           </Routes>
         </main>
         <Footer />
