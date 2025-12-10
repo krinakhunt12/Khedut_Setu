@@ -24,8 +24,18 @@ export const en = {
     revenue: "Total Trade"
   },
   weather: {
-    title: "Today's Weather",
+    title: "Agri Weather",
     subtitle: "Temperature and Rain Forecast for your area",
+  },
+  videos: {
+    title: "Smart Farming Videos",
+    subtitle: "Learn from experts and increase yield",
+    watch: "Watch"
+  },
+  download: {
+    title: "Download Khedut Setu Mobile App",
+    subtitle: "Market in your pocket. Anytime, Anywhere.",
+    btn: "Download Now"
   },
   schemes: {
     title: "Useful Government Schemes",
@@ -114,7 +124,7 @@ export const en = {
   market: {
     title: "Marketplace",
     searchPlaceholder: "Search (e.g. Mango, Wheat, Rajkot)...",
-    noProducts: "No products found. Please try again.",
+    noProducts: "No products found. Please try changing filters.",
     orderBtn: "Order Now",
     pricePerUnit: "per",
     farmer: "Farmer",
@@ -127,7 +137,28 @@ export const en = {
     processing: "Processing...",
     success: "Order Successful!",
     successMsg: "Your order has been accepted. The farmer will contact you soon.",
-    close: "Close"
+    close: "Close",
+    organic: "Organic",
+    verified: "Verified",
+    
+    // New Translations
+    filters: "Filters",
+    categories: "Categories",
+    priceRange: "Price Range",
+    maxPrice: "Max Price",
+    locations: "Locations",
+    sortBy: "Sort By",
+    sortFeatured: "Featured",
+    sortLowHigh: "Price: Low to High",
+    sortHighLow: "Price: High to Low",
+    sortRating: "Rating: High to Low",
+    dealOfTheDay: "Deal of the Day",
+    hurryUp: "Hurry Up! Offer ends in:",
+    addToCart: "Add to Cart",
+    discount: "OFF",
+    stockLeft: "Stock Left",
+    clearFilters: "Clear Filters",
+    results: "Results"
   },
   footer: {
     description: "Khedut Setu is India's largest digital agri-market. Our goal is to make farmers self-reliant and provide pure food to customers.",

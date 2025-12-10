@@ -24,8 +24,18 @@ export const gu = {
     revenue: "કુલ વેપાર"
   },
   weather: {
-    title: "આજનું હવામાન (Weather)",
+    title: "ખેતીલક્ષી હવામાન (Agri Weather)",
     subtitle: "તમારા વિસ્તારના તાપમાન અને વરસાદની આગાહી",
+  },
+  videos: {
+    title: "સ્માર્ટ ખેતી વિડીયો (Farming Guide)",
+    subtitle: "નિષ્ણાતો પાસેથી શીખો અને ઉત્પાદન વધારો",
+    watch: "જુઓ"
+  },
+  download: {
+    title: "ખેડૂત સેતુ મોબાઈલ એપ ડાઉનલોડ કરો",
+    subtitle: "હવે બજાર તમારા ખિસ્સામાં. ક્યારેય પણ, ક્યાંય પણ.",
+    btn: "ડાઉનલોડ કરો"
   },
   schemes: {
     title: "ખેડૂત ઉપયોગી સરકારી યોજનાઓ",
@@ -114,7 +124,7 @@ export const gu = {
   market: {
     title: "બજાર (Marketplace)",
     searchPlaceholder: "શોધો (ઉદા. કેરી, ઘઉં, રાજકોટ)...",
-    noProducts: "કોઈ પ્રોડક્ટ મળી નથી. ફરીથી પ્રયાસ કરો.",
+    noProducts: "કોઈ પ્રોડક્ટ મળી નથી. ફિલ્ટર બદલો.",
     orderBtn: "ઓર્ડર કરો",
     pricePerUnit: "પ્રતિ",
     farmer: "ખેડૂત",
@@ -127,7 +137,28 @@ export const gu = {
     processing: "પ્રોસેસ થાય છે...",
     success: "ઓર્ડર સફળ!",
     successMsg: "તમારો ઓર્ડર સ્વીકારવામાં આવ્યો છે. ખેડૂત ટૂંક સમયમાં સંપર્ક કરશે.",
-    close: "બંધ કરો"
+    close: "બંધ કરો",
+    organic: "ઓર્ગેનિક",
+    verified: "વેરિફાઈડ",
+    
+    // New Translations
+    filters: "ફિલ્ટર્સ",
+    categories: "કેટેગરી",
+    priceRange: "કિંમત મર્યાદા",
+    maxPrice: "મહત્તમ કિંમત",
+    locations: "વિસ્તાર (Locations)",
+    sortBy: "ક્રમમાં ગોઠવો",
+    sortFeatured: "લોકપ્રિય (Featured)",
+    sortLowHigh: "ભાવ: ઓછા થી વધુ",
+    sortHighLow: "ભાવ: વધુ થી ઓછા",
+    sortRating: "રેટિંગ: ઊંચું થી નીચું",
+    dealOfTheDay: "આજની ખાસ ઓફર",
+    hurryUp: "જલ્દી કરો! ઓફર પૂરી થવામાં છે:",
+    addToCart: "કાર્ટમાં ઉમેરો",
+    discount: "OFF",
+    stockLeft: "સ્ટોક બાકી",
+    clearFilters: "ફિલ્ટર દૂર કરો",
+    results: "પરિણામો"
   },
   footer: {
     description: "ખેડૂત સેતુ એ ભારતનું સૌથી મોટું ડિજિટલ એગ્રી-માર્કેટ છે. અમારો ઉદ્દેશ્ય ખેડૂતોને આત્મનિર્ભર બનાવવાનો અને ગ્રાહકોને શુદ્ધ ખોરાક પૂરો પાડવાનો છે.",

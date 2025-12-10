@@ -25,10 +25,41 @@ export const CATEGORIES = [
 ];
 
 export const MOCK_WEATHER = [
-  { city: "અમરેલી (Amreli)", temp: "32°C", condition: "ચોખ્ખું આકાશ", icon: "Sun" },
-  { city: "રાજકોટ (Rajkot)", temp: "34°C", condition: "આંશિક વાદળછાયું", icon: "Cloud" },
-  { city: "સુરત (Surat)", temp: "30°C", condition: "ભેજવાળું", icon: "CloudRain" },
-  { city: "બનાસકાંઠા (B.K.)", temp: "35°C", condition: "તડકો", icon: "Sun" }
+  { city: "અમરેલી (Amreli)", temp: "32°C", condition: "ચોખ્ખું આકાશ", icon: "Sun", bg: "from-orange-400 to-yellow-300" },
+  { city: "રાજકોટ (Rajkot)", temp: "34°C", condition: "આંશિક વાદળછાયું", icon: "Cloud", bg: "from-blue-400 to-blue-200" },
+  { city: "સુરત (Surat)", temp: "30°C", condition: "ભેજવાળું", icon: "CloudRain", bg: "from-gray-600 to-gray-400" },
+  { city: "બનાસકાંઠા (B.K.)", temp: "35°C", condition: "તડકો", icon: "Sun", bg: "from-orange-500 to-yellow-400" }
+];
+
+export const MOCK_VIDEOS = [
+  {
+    title: "કપાસના ઉત્પાદનમાં વધારો કેવી રીતે કરવો?",
+    duration: "10:05",
+    thumbnail: "https://images.unsplash.com/photo-1473649687982-f5c1d46d0130?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    views: "1.2K",
+    videoUrl: "https://www.youtube.com/results?search_query=cotton+farming+increase+production+gujarati"
+  },
+  {
+    title: "પ્રાકૃતિક ખેતી: જીવામૃત બનાવવાની રીત",
+    duration: "15:30",
+    thumbnail: "https://images.unsplash.com/photo-1592419044706-39796d40f98c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    views: "5.5K",
+    videoUrl: "https://www.youtube.com/results?search_query=jivamrut+banavani+rit+gujarati"
+  },
+  {
+    title: "ટપક સિંચાઈ પદ્ધતિના ફાયદા",
+    duration: "08:20",
+    thumbnail: "https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    views: "3.1K",
+    videoUrl: "https://www.youtube.com/results?search_query=drip+irrigation+benefits+gujarati"
+  },
+  {
+    title: "શિયાળુ પાકનું આયોજન",
+    duration: "12:45",
+    thumbnail: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    views: "2.8K",
+    videoUrl: "https://www.youtube.com/results?search_query=rabi+crops+gujarat+planning"
+  }
 ];
 
 export const MOCK_PRODUCTS: Product[] = [
@@ -170,22 +201,26 @@ export const MOCK_SCHEMES = [
   {
     title: "પ્રધાનમંત્રી કિસાન સન્માન નિધિ",
     desc: "દરેક ખેડૂત પરિવારને વાર્ષિક ₹6,000 ની આર્થિક સહાય. સીધા બેંક ખાતામાં જમા.",
-    tag: "કેન્દ્ર સરકાર"
+    tag: "કેન્દ્ર સરકાર",
+    link: "https://pmkisan.gov.in/"
   },
   {
-    title: "તાર ફેન્સીંગ યોજના",
+    title: "તાર ફેન્સીંગ યોજના (i-Khedut)",
     desc: "ખેતરની ફરતે કાંટાળી તારની વાડ કરવા માટે સરકાર તરફથી સબસિડી સહાય.",
-    tag: "ગુજરાત સરકાર"
+    tag: "ગુજરાત સરકાર",
+    link: "https://ikhedut.gujarat.gov.in/"
   },
   {
     title: "સોઈલ હેલ્થ કાર્ડ યોજના",
     desc: "જમીનની ફળદ્રુપતા ચકાસવા અને ખાતરનો યોગ્ય ઉપયોગ કરવા માટે મફત ટેસ્ટિંગ.",
-    tag: "ખેતીવાડી ખાતું"
+    tag: "ખેતીવાડી ખાતું",
+    link: "https://soilhealth.dac.gov.in/"
   },
   {
     title: "કિસાન ક્રેડિટ કાર્ડ (KCC)",
     desc: "ખેતીના ખર્ચ માટે ઓછા વ્યાજ દરે ટૂંકા ગાળાની લોન સુવિધા.",
-    tag: "બેંકિંગ"
+    tag: "બેંકિંગ",
+    link: "https://www.myscheme.gov.in/schemes/kcc"
   }
 ];
 
