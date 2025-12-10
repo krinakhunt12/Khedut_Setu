@@ -19,19 +19,28 @@ export const CATEGORIES = [
   'મસાલા',
   'ફળ',
   'ઓર્ગેનિક',
-  'ડેરી પ્રોડક્ટ્સ'
+  'ડેરી પ્રોડક્ટ્સ',
+  'બિયારણ',
+  'ખેતી ઓજારો'
+];
+
+export const MOCK_WEATHER = [
+  { city: "અમરેલી (Amreli)", temp: "32°C", condition: "ચોખ્ખું આકાશ", icon: "Sun" },
+  { city: "રાજકોટ (Rajkot)", temp: "34°C", condition: "આંશિક વાદળછાયું", icon: "Cloud" },
+  { city: "સુરત (Surat)", temp: "30°C", condition: "ભેજવાળું", icon: "CloudRain" },
+  { city: "બનાસકાંઠા (B.K.)", temp: "35°C", condition: "તડકો", icon: "Sun" }
 ];
 
 export const MOCK_PRODUCTS: Product[] = [
   {
     id: '1',
-    name: 'ગીર કેસર કેરી',
+    name: 'ગીર કેસર કેરી (Gir Kesar)',
     category: 'ફળ',
     price: 1200,
     unit: '20 કિલો',
     farmerName: 'રામજીભાઈ પટેલ',
     location: 'તાલાલા, ગીર',
-    image: 'https://picsum.photos/400/300?random=1',
+    image: 'https://images.unsplash.com/photo-1601493700631-2b16ec4f4716?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     rating: 4.8
   },
   {
@@ -42,40 +51,40 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: '20 કિલો',
     farmerName: 'કાનજીભાઈ આહિર',
     location: 'ભાલ પ્રદેશ',
-    image: 'https://picsum.photos/400/300?random=2',
+    image: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     rating: 4.9
   },
   {
     id: '3',
     name: 'તાજા ટામેટા',
     category: 'શાકભાજી',
-    price: 20,
-    unit: '1 કિલો',
+    price: 400,
+    unit: '20 કિલો',
     farmerName: 'સુરેશભાઈ ઠાકોર',
     location: 'ડીસા',
-    image: 'https://picsum.photos/400/300?random=3',
+    image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     rating: 4.5
   },
   {
     id: '4',
     name: 'જીરું (ઉત્તમ ગુણવત્તા)',
     category: 'મસાલા',
-    price: 3500,
+    price: 5500,
     unit: '20 કિલો',
     farmerName: 'પટેલ એગ્રો ફાર્મ',
     location: 'ઊંઝા',
-    image: 'https://picsum.photos/400/300?random=4',
+    image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     rating: 4.7
   },
   {
     id: '5',
-    name: 'બાજરી',
+    name: 'બાજરી (દેશી)',
     category: 'અનાજ',
     price: 450,
     unit: '20 કિલો',
     farmerName: 'ભરતભાઈ ચૌધરી',
     location: 'બનાસકાંઠા',
-    image: 'https://picsum.photos/400/300?random=5',
+    image: 'https://images.unsplash.com/photo-1621255755146-2f1908d4eb0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     rating: 4.6
   },
   {
@@ -86,9 +95,129 @@ export const MOCK_PRODUCTS: Product[] = [
     unit: '1 કિલો',
     farmerName: 'દિનેશભાઈ સોલંકી',
     location: 'જૂનાગઢ',
-    image: 'https://picsum.photos/400/300?random=6',
+    image: 'https://images.unsplash.com/photo-1515543904379-3d757afe9c6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
     rating: 4.9
+  },
+  {
+    id: '7',
+    name: 'લાલ ડુંગળી',
+    category: 'શાકભાજી',
+    price: 300,
+    unit: '20 કિલો',
+    farmerName: 'મનસુખભાઈ વઘાસિયા',
+    location: 'મહુવા, ભાવનગર',
+    image: 'https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    rating: 4.4
+  },
+  {
+    id: '8',
+    name: 'મગફળી (દાણા)',
+    category: 'તેલીબિયાં',
+    price: 1300,
+    unit: '20 કિલો',
+    farmerName: 'રાજેશ્વરી ફાર્મ',
+    location: 'અમરેલી',
+    image: 'https://images.unsplash.com/photo-1565553752796-0373d5415754?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    rating: 4.8
+  },
+  {
+    id: '9',
+    name: 'કપાસ (શંકર-6)',
+    category: 'તેલીબિયાં',
+    price: 1650,
+    unit: '20 કિલો',
+    farmerName: 'રમેશભાઈ',
+    location: 'જામનગર',
+    image: 'https://images.unsplash.com/photo-1594314489370-17e57c617b7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    rating: 4.7
+  },
+  {
+    id: '10',
+    name: 'શુદ્ધ ગાયનું ઘી',
+    category: 'ડેરી પ્રોડક્ટ્સ',
+    price: 900,
+    unit: '1 લીટર',
+    farmerName: 'ગોપાલ ડેરી ફાર્મ',
+    location: 'ગીર સોમનાથ',
+    image: 'https://images.unsplash.com/photo-1626127161642-4f9e1e2c9e7a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    rating: 5.0
+  },
+  {
+    id: '11',
+    name: 'હળદર પાવડર',
+    category: 'મસાલા',
+    price: 200,
+    unit: '500 ગ્રામ',
+    farmerName: 'પ્રાકૃતિક ખેતી ફાર્મ',
+    location: 'સાબરકાંઠા',
+    image: 'https://images.unsplash.com/photo-1615485500704-8e99099928b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    rating: 4.6
+  },
+  {
+    id: '12',
+    name: 'સરગવો (Drumsticks)',
+    category: 'શાકભાજી',
+    price: 40,
+    unit: '1 કિલો',
+    farmerName: 'નટુભાઈ',
+    location: 'વડોદરા',
+    image: 'https://images.unsplash.com/photo-1541595126-5541e217578b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    rating: 4.3
   }
+];
+
+export const MOCK_SCHEMES = [
+  {
+    title: "પ્રધાનમંત્રી કિસાન સન્માન નિધિ",
+    desc: "દરેક ખેડૂત પરિવારને વાર્ષિક ₹6,000 ની આર્થિક સહાય. સીધા બેંક ખાતામાં જમા.",
+    tag: "કેન્દ્ર સરકાર"
+  },
+  {
+    title: "તાર ફેન્સીંગ યોજના",
+    desc: "ખેતરની ફરતે કાંટાળી તારની વાડ કરવા માટે સરકાર તરફથી સબસિડી સહાય.",
+    tag: "ગુજરાત સરકાર"
+  },
+  {
+    title: "સોઈલ હેલ્થ કાર્ડ યોજના",
+    desc: "જમીનની ફળદ્રુપતા ચકાસવા અને ખાતરનો યોગ્ય ઉપયોગ કરવા માટે મફત ટેસ્ટિંગ.",
+    tag: "ખેતીવાડી ખાતું"
+  },
+  {
+    title: "કિસાન ક્રેડિટ કાર્ડ (KCC)",
+    desc: "ખેતીના ખર્ચ માટે ઓછા વ્યાજ દરે ટૂંકા ગાળાની લોન સુવિધા.",
+    tag: "બેંકિંગ"
+  }
+];
+
+export const MOCK_NEWS = [
+  {
+    title: "કપાસના ભાવમાં રેકોર્ડ બ્રેક ઉછાળો",
+    date: "12 May 2024",
+    source: "APMC સમાચાર"
+  },
+  {
+    title: "ચોમાસુ 2024: ગુજરાતમાં સામાન્ય કરતા વધુ વરસાદની આગાહી",
+    date: "10 May 2024",
+    source: "હવામાન વિભાગ"
+  },
+  {
+    title: "પ્રાકૃતિક ખેતી કરતા ખેડૂતો માટે વિશેષ પેકેજ જાહેર",
+    date: "08 May 2024",
+    source: "ગાંધીનગર"
+  }
+];
+
+export const SUGGESTED_QUESTIONS = [
+  "આજે કપાસનો ભાવ શું છે?",
+  "જીરું પકવવા માટે કઈ દવા સારી?",
+  "ચોમાસુ ક્યારે બેસશે?",
+  "ઓર્ગેનિક ખેતી કેવી રીતે કરવી?",
+  "સરકારી સબસિડીની માહિતી આપો",
+  "મગફળીમાં ઈયળનો ઉપાય"
+];
+
+export const MARKET_RATES_TICKER = [
+  "કપાસ: ₹1500-1650", "જીરું: ₹5000-5800", "ઘઉં: ₹550-650", "મગફળી: ₹1200-1400", "ચણા: ₹900-1050", "એરંડા: ₹1100-1200", "બાજરી: ₹400-500"
 ];
 
 export const SEO_KEYWORDS = [
