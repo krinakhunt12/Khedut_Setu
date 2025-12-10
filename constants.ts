@@ -5,7 +5,7 @@ import { NavItem, Product } from './types';
 export const NAV_ITEMS: NavItem[] = [
   { label: 'મુખ્ય પૃષ્ઠ', translationKey: 'nav.home', path: '/', icon: Home },
   { label: 'બજાર (Market)', translationKey: 'nav.market', path: '/market', icon: ShoppingBag },
-  { label: 'કૃષિ સલાહકાર', translationKey: 'nav.advisor', path: '/ai-advisor', icon: MessageCircle },
+  // Removed Agri Advisor from Navbar as it is now a floating chatbot
   { label: 'રજીસ્ટ્રેશન', translationKey: 'nav.register', path: '/register', icon: UserPlus },
   { label: 'લોગિન', translationKey: 'nav.login', path: '/login', icon: LogIn },
   { label: 'મદદ', translationKey: 'nav.help', path: '/help', icon: HelpCircle },

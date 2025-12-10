@@ -9,11 +9,12 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import AiAssistant from './pages/AiAssistant';
 import Help from './pages/Help';
+import FloatingAiChat from './components/FloatingAiChat';
 
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen relative">
         <Navbar />
         <main className="flex-grow">
           <Routes>
@@ -26,6 +27,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <FloatingAiChat />
       </div>
     </Router>
   );
