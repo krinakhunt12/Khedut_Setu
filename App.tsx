@@ -12,6 +12,7 @@ import Help from './pages/Help';
 import FloatingAiChat from './components/FloatingAiChat';
 import Legal from './pages/Legal';
 import About from './pages/About';
+import News from './pages/News';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/terms" element={<Legal type="terms" />} />
             <Route path="/privacy" element={<Legal type="privacy" />} />
             <Route path="/about" element={<About />} />
+            <Route path="/news" element={<News />} />
           </Routes>
         </main>
         <Footer />

@@ -310,9 +310,9 @@ const Home: React.FC = () => {
                     </div>
                   ))}
                  </div>
-                 <button className="w-full mt-6 py-2 text-center text-sm font-bold text-green-700 border border-green-200 rounded-xl hover:bg-green-50 transition">
+                 <Link to="/news" className="block w-full mt-6 py-2 text-center text-sm font-bold text-green-700 border border-green-200 rounded-xl hover:bg-green-50 transition">
                     View All News
-                 </button>
+                 </Link>
               </div>
             </div>
           </div>
